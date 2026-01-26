@@ -1,0 +1,19 @@
+class Aurukhana:
+    def __init__(self, atauy, siyimdilik):
+        self.atauy = atauy
+        self.siyimdilik = siyimdilik
+        self.pacient_sany = 0
+        self.dariger_sany = 0
+
+    def pacient_kosu(self, sany):
+        self.pacient_sany += sany
+        if self.pacient_sany > self.siyimdilik:
+            print("⚠️ Аурухана сыйымдылығынан асып кетті!")
+
+    def dariger_kosu(self, sany):
+        self.dariger_sany += sany
+        if self.dariger_sany < self.pacient_sany / 10:
+            print("⚠️ Дәрігер жетіспейді!")
+a1 = Aurukhana("Қалалық аурухана", 100)
+a1.pacient_kosu(120)
+a1.dariger_kosu(8)
