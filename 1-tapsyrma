@@ -8,12 +8,12 @@ class Aurukhana:
     def pacient_kosu(self, sany):
         self.pacient_sany += sany
         if self.pacient_sany > self.siyimdilik:
-            print("⚠️ Аурухана сыйымдылығынан асып кетті!")
+            print("Аурухана сыйымдылығынан асып кетті!")
 
     def dariger_kosu(self, sany):
         self.dariger_sany += sany
         if self.dariger_sany < self.pacient_sany / 10:
-            print("⚠️ Дәрігер жетіспейді!")
+            print("Дәрігер жетіспейді!")
 a1 = Aurukhana("Қалалық аурухана", 100)
 a1.pacient_kosu(120)
 a1.dariger_kosu(8)
